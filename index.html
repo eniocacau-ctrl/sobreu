@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Prodígio | Automação Python & Web Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&family=Fira+Code:wght@400;500&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/phosphor-icons"></script>
+</head>
+
+<body>
+
+    <div id="loader">
+        <div class="loader-content">
+            <span class="t-cyan">PRODIGIO_OS_BOOT...</span>
+            <div class="load-bar">
+                <div id="progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="brand">DEV<span></span></div>
+            <div class="links">
+                <a href="#home">Home</a>
+                <a href="#orcamento">Preços</a>
+                <a href="#terminal">Assistente</a>
+                <a href="#game">Desafio</a>
+                <a href="#faq">FAQ</a>
+            </div>
+            <a href="https://wa.link/8lgusv" class="nav-cta">WHATSAPP</a>
+        </div>
+    </nav>
+
+    <header id="home" class="hero-section">
+        <div class="container hero-grid">
+            <div class="hero-text" data-aos="fade-right">
+                <div class="badge-row">
+                    <span class="location-badge"><i class="ph-map-pin"></i> RIO GRANDE, RS</span>
+                    <span class="status-online">● ONLINE AGORA</span>
+                </div>
+                <h1>Crio Sites que <br><span class="text-3d-gradient">Trabalham por Você.</span></h1>
+                <p>Tenho 12 anos e domino Python para criar automações que economizam seu tempo e sites que vendem sua
+                    marca 24h por dia.</p>
+                <div class="hero-btns">
+                    <a href="#orcamento" class="btn-primary">Ver Orçamentos</a>
+                    <a href="#terminal" class="btn-secondary">Falar com Assistente</a>
+                </div>
+            </div>
+
+            <div class="hero-visual" data-tilt>
+                <div class="card main-card">
+                    <div class="code-header">
+                        <span class="r"></span><span class="y"></span><span class="g"></span>
+                        <small>main.py</small>
+                    </div>
+                    <pre><code><span class="c-1">import</span> time
+<span class="c-1">print</span>(<span class="c-2">"Hello World"</span>)
+<span class="c-1">if</span> success:
+    deploy_site()</code></pre>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="orcamento" class="pricing-section">
+        <div class="container">
+            <h2 class="center-title" data-aos="fade-up">Seu Investimento</h2>
+            <div class="pricing-grid">
+                <div class="price-card" data-aos="fade-up">
+                    <div class="p-header">
+                        <h3>Landing Page</h3>
+                        <p>Ideal para produtos únicos</p>
+                    </div>
+                    <div class="price-value">R$ 200</div>
+                    <ul class="p-features">
+                        <li><i class="ph-check"></i> Design Moderno (UI/UX)</li>
+                        <li><i class="ph-check"></i> Adaptado para Celular</li>
+                        <li><i class="ph-check"></i> Botão WhatsApp Direto</li>
+                        <li><i class="ph-check"></i> Otimização de Velocidade</li>
+                    </ul>
+                    <a href="https://wa.link/8lgusv" class="btn-secondary">Quero este</a>
+                </div>
+
+                <div class="price-card featured" data-aos="fade-up" data-aos-delay="100">
+                    <div class="popular-tag">RECOMENDADO</div>
+                    <div class="p-header">
+                        <h3>Site + Automação</h3>
+                        <p>O poder do Python no seu negócio</p>
+                    </div>
+                    <div class="price-value">R$ 350</div>
+                    <ul class="p-features">
+                        <li><i class="ph-check"></i> Tudo do plano anterior</li>
+                        <li><i class="ph-check"></i> Script Python Customizado</li>
+                        <li><i class="ph-check"></i> Integração com Planilhas/Dados</li>
+                        <li><i class="ph-check"></i> SEO Avançado Google</li>
+                    </ul>
+                    <a href="https://wa.link/8lgusv" class="btn-primary">Contratar Agora</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="terminal" class="terminal-section">
+        <div class="container">
+            <div class="terminal-wrapper-compact" data-aos="zoom-in">
+                <div class="terminal-window">
+                    <div class="terminal-bar">
+                        <div class="t-dots"><span class="r"></span><span class="y"></span><span class="g"></span></div>
+                        <span>guest@devprodigio:~</span>
+                    </div>
+                    <div class="terminal-content" id="terminal-content">
+                        <div class="output">Bem-vindo. Digite <b class="t-cyan">help</b> para começar.</div>
+                    </div>
+                    <div class="terminal-input-line">
+                        <span class="prompt">λ</span>
+                        <input type="text" id="terminal-input" spellcheck="false" autocomplete="off">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="game" class="game-section">
+        <div class="container">
+            <div class="game-card" data-aos="flip-up">
+                <span class="game-tag">DESAFIO DE AGILIDADE</span>
+                <h2>Quantas palavras você digita em 15s?</h2>
+                <div id="word-to-type">READY?</div>
+                <input type="text" id="game-input" disabled>
+                <div class="game-stats">
+                    <span>Acertos: <b id="score">0</b></span>
+                    <span>Tempo: <b id="timer">15s</b></span>
+                </div>
+                <button class="btn-primary" id="start-game">COMEÇAR TESTE</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <h2 class="center-title">Perguntas Frequentes</h2>
+            <div class="faq-wrapper">
+                <div class="faq-item">
+                    <div class="faq-trigger">Quais automações você faz com Python? <i class="ph-plus"></i></div>
+                    <div class="faq-content">Crio bots para coletar dados da web (scraping), automação de mensagens,
+                        scripts para organizar arquivos e bots de trading ou monitoramento.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-trigger">Como funciona o pagamento? <i class="ph-plus"></i></div>
+                    <div class="faq-content">Trabalho com 50% de entrada para reserva de agenda e 50% na entrega final
+                        do projeto aprovado.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2026 Dev Prodígio - Rio Grande, RS. Programando o futuro desde os 12.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
